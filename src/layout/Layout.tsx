@@ -22,9 +22,9 @@ const Layout = () => {
         handleToggleSidebar={handleToggleSidebar}
         handleCollapsedChange={handleCollapsedChange}
       />
-      <div className="w-full bg-red-400">
+      <div className="w-full">
         <Header fs={handleToggleSidebar} />
-        <div className="bg-yellow-50 h-full">
+        <div className="bg-[#2B3C51] h-full">
           <Outlet />
         </div>
       </div>
