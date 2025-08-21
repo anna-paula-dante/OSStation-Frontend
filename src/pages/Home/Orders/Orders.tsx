@@ -3,6 +3,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import type { UserWithOrders } from "@/types/OrderTypes";
 import ShowOrder from "@/components/ShowOrder";
+import TitleBanner from "@/components/TitleBanner";
 
 export default function Orders() {
   const [orders, setOrders] = useState<UserWithOrders[]>([]);
@@ -25,7 +26,9 @@ export default function Orders() {
     setIsLoading(false);
   };
   return (
-    <div className="flex flex-col px-11 pt-8 bg-[#2B3C51]">
+    <div className="flex flex-col px-11 pt-8 gap-5 bg-[#2B3C51]">
+      <TitleBanner />
+
       <SearchOrder
         onSearchStart={handleSearchStart}
         onSearchSuccess={handleSearchSuccess}
