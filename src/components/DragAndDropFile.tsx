@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { FileUploader } from "react-drag-drop-files";
 import type { FC } from "react";
-import { IoCloudUploadOutline } from "react-icons/io5";
+import {
+  IoCheckmark,
+  IoCloseOutline,
+  IoCloudUploadOutline,
+} from "react-icons/io5";
+import { uploadFileService } from "@/services/fileUploadService";
+import { toast } from "sonner";
 
 const fileTypes = ["TXT"];
 
@@ -14,6 +20,34 @@ const DragAndDropFile: FC = () => {
       setFile(file[0] || null);
     } else {
       setFile(file);
+    }
+  };
+
+  const handleUpload = async () => {
+    if (!file) return;
+
+    setIsUploading(true);
+
+    try {
+      const response = await uploadFileService(file, "/upload");
+      toast(
+        <div className="text-white flex w-[330px] justify-between items-center">
+          {response.message}
+          <IoCheckmark className="text-[#00FFA3]" size={30} />
+        </div>
+      );
+      console.log("Resposta do servidor:", response);
+      setFile(null);
+    } catch (error) {
+      console.error("Ocorreu um erro:", error);
+      toast(
+        <div className="text-white flex w-[330px] justify-between items-center">
+          Falha no envio. Por favor, tente novamente.
+          <IoCloseOutline className="text-red-500" size={30} />
+        </div>
+      );
+    } finally {
+      setIsUploading(false);
     }
   };
 
@@ -49,6 +83,7 @@ const DragAndDropFile: FC = () => {
         />
         <div className="self-end">
           <button
+            onClick={handleUpload}
             disabled={!file || isUploading}
             className="px-28 py-2 bg-[#00FFA3] text-black text-base font-normal rounded disabled:bg-gray-400"
           >
