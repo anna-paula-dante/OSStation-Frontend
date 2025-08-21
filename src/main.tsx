@@ -7,6 +7,12 @@ import AppRouter from "./router/AppRouter.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <AppRouter />
-    <Toaster />
+    <Toaster
+      position="top-right"
+      expand={true}
+      toastOptions={{
+        style: { backgroundColor: "#3D5470" },
+      }}
+    />
   </StrictMode>
 );
