@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
 import { Link } from "react-router";
+import { useNavigate } from "react-router";
 export default function SignIn() {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#2B3C51] backdrop-opacity-100 h-dvh w-full flex items-center justify-center">
       <div className="flex flex-col items-center gap-2.5">
@@ -20,7 +22,9 @@ export default function SignIn() {
             />
           </form>
           <div className="flex flex-col gap-4">
-            <Button className="">Entrar</Button>
+            <Button onClick={() => navigate("/home")} className="">
+              Entrar
+            </Button>
             <div className=" self-end">
               <Switch />
               <span className="text-white text-base font-normal pl-2">
