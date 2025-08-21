@@ -2,6 +2,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 @theme inline {
   --font-Inter: "Inter", sans-serif; 
   --radius-sm: calc(var(--radius) - 4px);
