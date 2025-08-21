@@ -11,7 +11,7 @@ export default function Home() {
           onClick={() => navigate("/home/update")}
           className="w-72 py-20 flex flex-col justify-center items-center gap-2 rounded-4xl bg-[#3D5470] hover:bg-[#00FFA3] "
         >
-          <h2 className="font-bold">Uploadd de Ordens</h2>
+          <h2 className="font-bold">Upload de Ordens</h2>
           <IoCloudUploadOutline size={70} />
         </div>
         <div
