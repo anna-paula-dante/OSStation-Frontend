@@ -41,7 +41,7 @@ Shadcn/UI: Coleção de componentes de UI reutilizáveis.
 
 Axios: Cliente HTTP para realizar as requisições à API.
 
-## ⚙️ Começando (Como Executar o Projeto)
+## Começando (Como Executar o Projeto)
 
 Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
 
