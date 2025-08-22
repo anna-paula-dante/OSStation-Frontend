@@ -88,15 +88,15 @@ A aplicação estará disponível em http://localhost:5173 (ou outra porta indic
 
 Este projeto é a base para um sistema mais completo. As próximas funcionalidades planejadas incluem:
 
-Autenticação de Usuários: Implementar uma logica solidada para página de login protegendo o acesso ao dashboard.
+- Autenticação de Usuários: Implementar uma logica solidada para página de login protegendo o acesso ao dashboard.
 
-Cadastro de Novos Usuários: Criar uma página de registro.
+- Cadastro de Novos Usuários: Criar uma página de registro.
 
-Gerenciamento de Sessão com JWT: Utilizar JSON Web Tokens para manter o usuário logado de forma segura entre as sessões.
+- Gerenciamento de Sessão com JWT: Utilizar JSON Web Tokens para manter o usuário logado de forma segura entre as sessões.
 
-Recuperação de Senha: Fluxo de "esqueci minha senha" com envio de e-mail.
+- Recuperação de Senha: Fluxo de "esqueci minha senha" com envio de e-mail.
 
-Dashboard de Métricas: Uma página inicial com gráficos e estatísticas sobre os pedidos.
+- Dashboard de Métricas: Uma página inicial com gráficos e estatísticas sobre os pedidos.
 
 Paginação: Adicionar paginação na lista de resultados para lidar com grandes volumes de dados.
 
