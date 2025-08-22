@@ -70,7 +70,7 @@ npm install
 ```
 
 3.Configure as Variáveis de Ambiente:
-Crie um arquivo chamado .env na raiz do projeto, e defina a URL da sua API de back-end:
+Crie um arquivo chamado .env na raiz do projeto, copiando o exemplo de .env.example (se houver), e defina a URL da sua API de back-end:
 
 ```Bash
 # O prefixo VITE\_ é necessário para que o Vite exponha a variável ao front-end
