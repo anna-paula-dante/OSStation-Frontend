@@ -1,4 +1,4 @@
-# S-Station - Dashboard de Processamento de Pedidos
+# OSStation - Dashboard de Processamento de Pedidos
 
 Este projeto é a interface de front-end para a API OS-Station. Trata-se de um dashboard web, construído com React, que permite aos usuários interagir com o sistema de processamento de pedidos: fazendo upload de arquivos de texto e visualizando os dados normalizados de forma clara e intuitiva.
 
