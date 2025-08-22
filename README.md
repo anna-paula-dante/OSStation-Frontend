@@ -98,6 +98,6 @@ Este projeto é a base para um sistema mais completo. As próximas funcionalidad
 
 - Dashboard de Métricas: Uma página inicial com gráficos e estatísticas sobre os pedidos.
 
-Paginação: Adicionar paginação na lista de resultados para lidar com grandes volumes de dados.
+- Paginação: Adicionar paginação na lista de resultados para lidar com grandes volumes de dados.
 
-Feedback de Upload: Melhorar o feedback visual durante e após o upload do arquivo (barra de progresso, mensagens de sucesso/erro mais detalhadas)
+- Feedback de Upload: Melhorar o feedback visual durante e após o upload do arquivo (barra de progresso, mensagens de sucesso/erro mais detalhadas)
